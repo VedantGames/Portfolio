@@ -189,7 +189,7 @@
 
                     <h3>Front End Developer</h3>
                     <p>Get in touch..</p>
-                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-instagram" onclick="it()"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-linkedin"></i>
                 </div>
@@ -198,11 +198,19 @@
         <!-------Javascript for Toogle Menu------->
         <script>
     var navbar = document.getElementById("navbar");
+
+    var insta = document.getElementById("insta");
+
     function showmenu(){
         navlinks.style.right = "0";
     }
     function hidemenu(){
         navlinks.style.right = "-200px";
+    }
+
+    function it(){
+        console.log("A");
+        window.open("https://www.instagram.com/guptavedant2549/", "_blank");
     }
 </script>
     </body>
