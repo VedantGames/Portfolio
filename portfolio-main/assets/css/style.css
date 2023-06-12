@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body {
+    background-color: black;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*--header--*/
+.portfolio {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 6rem;
+    color: white;
+
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+    padding: 0.5rem;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: rgb(178, 10, 10);
+
+}
+
+span {
+    color: rgb(178, 10, 10);
+}
+
+.hello {
+    padding: 2rem;
+    align-items: center;
+    top: 50%;
+    width: 50%;
+
+}
+
+.Vedant {
+    position: relative;
+}
+
+.landing {
+    width: 50%;
+    transform: translate(0, -7rem);
+}
+
+.name {
+    color: white;
+    margin: auto;
+    padding: 10% 5%;
+    position: relative;
+    display: flex;
+    height: 90vh;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 10px 0;
+    color: white;
+
+}
+
+h2 {
+    color: white;
+    font-size: 32px;
+}
+
+h3 {
+    font-size: X-large;
+    color: rgb(143, 143, 143);
+}
+
+h4 {
+    color: WHITE;
+}
+
+/*--AboutMe--*/
+.aboutMe {
+    margin: 10px;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    width: 50%;
+}
+
+.profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: 4.5rem;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.about h4 {
+    font-size: 1rem;
+    color: #ccc;
+    opacity: 0.7;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.about p {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.about li {
+    list-style: circle;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+
+.about {
+    margin: 2rem 0;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50%;
+
+}
+
+p {
+    color: white;
+    font-size: medium;
+    word-spacing: 3px;
+    margin: 10px;
+
+}
+
+/*--SKILLS--*/
+.skills {
+    text-align: center;
+    padding-top: 8rem;
+
+}
+
+.skills h2 {
+    text-align: center;
+    padding: 2rem 6rem;
+    font-size: 40px;
+}
+
+.row {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 50% 50%;
+    margin: 5%;
+}
+
+.course-col {
+    background: rgb(42, 40, 40);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+
+h4 {
+
+    font-weight: 600;
+    margin: 10Px 0;
+}
+
+h5 {
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.course-col:hover {
+
+    transform: scale(1.1);
+}
+
+/*--Container--*/
+
+.hire {
+    text-align: center;
+    height: 15rem;
+
+}
+
+.hire h3 {
+    padding-top: 3rem;
+    font-size: 32px;
+    color: white;
+}
+
+.hire a:hover {
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px;
+    margin: 1rem;
+    position: relative ;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.hero-btn:hover {
+    border: 2px solid white;
+    background-color: rgb(185, 53, 53);
+    transition: 1s;
+}
+
+.footer {
+    margin: 3rem;
+    text-align: center;
+}
+
+.footer h2 {
+    padding: 8px;
+}
+
+i {
+    margin: 2rem;
+    color: rgb(178, 10, 10);
+    padding: rem;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+
+@media(max-width: 700px) {
+
+    nav {
+        display: block;
+        padding: 2rem 3rem;
+    }
+
+    .course {
+        display: block;
+    }
+
+    .profile-image {
+        padding: 1rem 2rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .aboutMe {
+        padding-top: 10rem;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        padding-top: 3rem;
+    }
+
+    .about {
+        text-align: center;
+    }
+
+    .about li {
+        text-align: center;
+    }
+
+    .name {
+        display: block;
+    }
+
+    .landing {
+        padding-top: 10rem;
+        width: 100%;
+    }
+}
